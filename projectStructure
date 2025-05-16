@@ -1,0 +1,19 @@
+splitwise/
+│
+├── model/
+│   ├── User.java
+│   ├── Expense.java
+│   ├── Split.java
+│   ├── SplitType.java
+│
+├── strategy/
+│   ├── SplitStrategy.java
+│   ├── EqualSplitStrategy.java
+│
+├── service/
+│   └── ExpenseService.java
+│
+├── manager/
+│   └── BalanceManager.java
+│
+├── Main.java
