@@ -32,6 +32,10 @@ public class Main {
         expenseService.addExpense(u1, 1000, Arrays.asList(u2, u3, u4),
                 SplitType.EXACT, Arrays.asList(300.0, 300.0, 400.0));
         expenseService.showBalance();
+        // Example for PERCENT split: 1000 → 40%, 30%, 30%
+        expenseService.addExpense(u1, 1000, Arrays.asList(u2, u3, u4),
+                SplitType.PERCENT, Arrays.asList(40.0, 30.0, 30.0));
+        expenseService.showBalance();
         testEqualSplit();
         }
 

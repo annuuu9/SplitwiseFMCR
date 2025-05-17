@@ -7,6 +7,7 @@ import model.SplitType;
 import model.User;
 import strategy.EqualSplitStrategy;
 import strategy.ExactSplitStrategy;
+import strategy.PercentSplitStrategy;
 import strategy.SplitStrategy;
 
 import java.util.List;
@@ -51,6 +52,8 @@ public class ExpenseService {
                 return new EqualSplitStrategy();
             case EXACT:
                 return new ExactSplitStrategy(values);
+            case PERCENT:
+                return new PercentSplitStrategy(values);
             default:
                 throw new IllegalArgumentException("Invalid SplitType");
         }
